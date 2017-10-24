@@ -1,0 +1,49 @@
+@import 'variables.scss';
+.navbar{
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+  height: 70px;
+  padding-top: 40px;
+}
+.container-nav{
+  align-items: flex-end;
+  width: 965px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  .telefones{
+    border: 2px solid $color-font;
+    padding: 5px 30px 5px 30px;
+    margin-left: 35%;
+  }
+  a{
+    margin-left: 20px;
+    margin-right: 20px;
+    text-transform: uppercase;
+    color: $color-font;
+    font-family: $font-family-base;
+    font-size: $font-size-small;
+    font-weight: $font-weight-thin;
+
+  }
+  .brand{
+    display: inline-block;
+    img{
+      margin-bottom: -10px;
+  }
+  }
+  .logo{
+    img{
+      margin-bottom: -6px;
+  }
+  }
+}
+.center-nav{
+  display: flex;
+  width: 60%;
+  margin: 0 auto;
+  align-items: flex-end;
+}
+.links-right{
+}
