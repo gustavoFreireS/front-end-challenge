@@ -57,7 +57,7 @@ class Isca extends Component {
           <div className='square-checked'></div>
         </div>
         <span className='ofertas'>Desejo receber ofertas exclusivas da PG prime</span>
-        <button className='button-simul'>Simular final de financiamento</button>
+        <button className='button-simul'>Simular financiamento</button>
         <a href='#' className='privacy'>política de privacidade
         </a>
       </div>

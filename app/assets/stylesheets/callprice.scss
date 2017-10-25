@@ -1,0 +1,48 @@
+@import 'variables.scss';
+.first-call{
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 34px;
+  font-weight: $font-weight-semi-bold;
+  margin-bottom: 0;
+}
+.sub-call{
+  text-transform: uppercase;
+  margin-top: -5px;
+  font-size: 22px;
+  font-weight: $font-weight-semi-bold;
+}
+.description{
+  font-size: 18px;
+  margin-bottom: 40px;
+  font-weight: $font-weight-normal;
+  .line-through{
+    margin-left: 5px;
+    text-decoration: line-through;
+  }
+}
+.price-now{
+  position: relative;
+  top: -30px;
+  display: inline-block;
+  margin-top: -40px;
+  font-size: 24px;
+  font-weight: $font-weight-thin;
+}
+.big-money{
+  margin-left: 5px;
+  font-size: 32px;
+}
+.root-call{
+  margin-left: 20px;
+  display: inline-block;
+  vertical-align: top;
+  color: $color-font;
+  font-family: $font-family-base;
+}
+.consulta{
+  font-weight: $font-weight-thin;
+  font-size: 10px;
+  position: relative;
+  top: -50px;
+}
