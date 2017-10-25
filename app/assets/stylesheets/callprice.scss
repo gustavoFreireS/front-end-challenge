@@ -34,15 +34,30 @@
   font-size: 32px;
 }
 .root-call{
+  width: 600px;
   margin-left: 20px;
   display: inline-block;
   vertical-align: top;
   color: $color-font;
   font-family: $font-family-base;
+  font-size: $font-size-wee;
 }
 .consulta{
   font-weight: $font-weight-thin;
   font-size: 10px;
   position: relative;
   top: -50px;
+}
+.share-info{
+  text-align: center;
+  width: 200px;
+  margin: 0 auto;
+  margin-top: 165px;
+  font-weight: $font-weight-thin;
+  font-size: $font-size-small;
+  img{
+    margin-top: 5px;
+    display: block;
+    margin-bottom: 10px;
+  }
 }
