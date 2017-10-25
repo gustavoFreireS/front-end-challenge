@@ -1,0 +1,141 @@
+@import 'variables.scss';
+
+.isca-container {
+  width: 300px;
+  height: 570px;
+  padding: 2px 20px 20px;
+  font-family: $font-family-base;
+  color: $color-font;
+  font-size: $font-size-small;
+  background-color: rgba(0, 0, 0, 0.35);
+
+  p {
+    color: $color-font;
+    font-size: $font-size-small;
+  }
+
+  .call {
+    font-size: 18px;
+    text-align: center;
+    font-weight: $font-weight-thin;
+    text-transform: uppercase;
+    margin-bottom: -5px;
+  }
+
+  .secondary-call {
+    font-weight: lighter;
+    text-align: center;
+    font-size: $font-size-small;
+  }
+
+  .separator {
+    width: 300px;
+    height: 1px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    background-color: $color-gray-dark;
+  }
+
+  .selector {
+    width: 280px;
+    border-radius: 5px;
+    background-color: transparent;
+    padding: 5px 10px;
+    border: 1px solid $color-gray-dark;
+    color: white;
+    margin-bottom: 15px;
+    font-size: $font-size-small;
+    font-weight: $font-weight-thin;
+
+    .seta {
+      float: right;
+    }
+  }
+
+  .input-text {
+    font-size: $font-size-small;
+    font-weight: $font-weight-thin;
+    width: 280px;
+    margin-top: 10px;
+    outline: none;
+    color: $color-white;
+    margin-bottom: 10px;
+    border: 1px solid $color-gray-dark;
+    border-radius: 5px;
+    padding: 7px 10px;
+    background-color: transparent;
+
+    &:nth-child(19) {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  }
+
+  .ball {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    margin-right: 10px;
+    height: 10px;
+    width: 10px;
+    border: 2px solid $color-font;
+    border-radius: 50%;
+
+    .ball-checked {
+      height: 6px;
+      width: 6px;
+      border-radius: 50%;
+      background-color: white;
+      margin: 2px auto 0;
+    }
+  }
+
+  .square {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    margin-right: 10px;
+    height: 10px;
+    width: 10px;
+    border: 2px solid $color-font;
+
+    .square-checked {
+      height: 6px;
+      width: 6px;
+      background-color: white;
+      margin: 2px auto 0;
+    }
+  }
+
+  .parcelas {
+    vertical-align: top;
+    margin-right: 37px;
+  }
+
+  .ofertas {
+    vertical-align: top;
+    margin-right: 37px;
+    font-size: $font-size-wee;
+    position: relative;
+    top: 1px;
+  }
+
+  .button-simul {
+    margin-top: 20px;
+    padding: 10px 25px;
+    text-transform: uppercase;
+    background-color: #b71d3e;
+    border: 0;
+    color: $color-font;
+    border-top: 2px solid lighten(#b71d3e, 10%);
+    font-size: $font-size-base;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 2px 4px 5px 0 rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 4px 5px 0 rgba(0,0,0,0.75);
+    box-shadow: 2px 4px 5px 0 rgba(0,0,0,0.75);
+  }
+
+  .privacy {
+    color: white !important;
+  }
+}

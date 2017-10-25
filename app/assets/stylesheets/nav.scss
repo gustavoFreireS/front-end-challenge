@@ -4,22 +4,26 @@
   width: 100%;
   z-index: 99;
   height: 70px;
-  padding-top: 40px;
+  padding-top: 20px;
 }
 .container-nav{
   align-items: flex-end;
-  width: 965px;
+  width: 955px;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
   .telefones{
     border: 2px solid $color-font;
-    padding: 5px 30px 5px 30px;
-    margin-left: 35%;
+    padding: 5px 15px 5px 15px;
+    margin-left: 65px;
+    font-size: $font-size-base;
+    .chev{
+      margin-left: 20px;
+    }
   }
   a{
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
     text-transform: uppercase;
     color: $color-font;
     font-family: $font-family-base;
@@ -28,9 +32,9 @@
 
   }
   .brand{
-    display: inline-block;
     img{
-      margin-bottom: -10px;
+      margin-left: -15%;
+      margin-bottom: -15px;
   }
   }
   .logo{
@@ -41,9 +45,20 @@
 }
 .center-nav{
   display: flex;
-  width: 60%;
+  width: 600px;
   margin: 0 auto;
   align-items: flex-end;
 }
 .links-right{
+}
+.chev{
+  align-items: center;
+  vertical-align: middle;
+  position: relative;
+  top: -3px;
+  margin-left: 10px;
+  font-size: 9px;
+}
+.phone{
+  margin-right: 10px;
 }

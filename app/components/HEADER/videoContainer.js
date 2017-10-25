@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 require('../../assets/stylesheets/videoContainer.scss');
 
 /**
- * Componente usado para mostrar um vídeo do vimeo em loop responsivamente em desktops
+ * Componente usado para mostrar um vídeo do vimeo em loop responsivamente em desktops e mostra uma imagem na versão mobile
  * Recebe a url do embed video como parâmetro"
  */
 class VideoContainer extends Component {
@@ -15,7 +15,7 @@ class VideoContainer extends Component {
     return (
       <div className='wrap-div'>
       <div className='container-video'>
-        <iframe className='vimeoXtra' src={this.props.url} width='100%' height={window.innerHeight + 251} frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        <iframe id="vimeo_player" className='vimeoXtra' src={this.props.url} width='100%' height='1280px' frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
       </div>
     </div>
     );

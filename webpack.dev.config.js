@@ -26,7 +26,7 @@ module.exports = {
         test: /\.(woff2?|jpe?g|png|gif|ico|svg)$/,
         use: 'file-loader?name=./app/images/[name].[ext]'
       }, {
-        test: /\.(eot|ttf|woff|otf)$/,
+        test: /\.(woff2?|ttf|svg|eot)(\?v=\d+\.\d+\.\d+)?$/,
         loader: 'file-loader?name=./app/fonts/[name].[ext]'
       }
     ]
