@@ -15,7 +15,7 @@ class VideoContainer extends Component {
     return (
       <div className='wrap-div'>
       <div className='container-video'>
-        <iframe id="vimeo_player" className='vimeoXtra' src={this.props.url} width='100%' height='1280px' frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        <iframe id="vimeo_player" className='vimeoXtra' src={this.props.url} width='1920px' height='1280px' frameBorder="0"></iframe>
       </div>
     </div>
     );

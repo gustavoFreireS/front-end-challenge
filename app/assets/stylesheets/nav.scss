@@ -3,9 +3,9 @@
   position: fixed;
   width: 100%;
   z-index: 99;
-  height: 70px;
+  height: 55px;
   padding-top: 30px;
-  transition: all ease-in-out 0.3s;
+  transition: all ease-in 0.3s;
 }
 .container-nav{
   align-items: flex-end;
@@ -30,6 +30,7 @@
     }
   }
   a{
+    cursor: pointer;
     margin-left: 10px;
     margin-right: 10px;
     text-transform: uppercase;
@@ -70,4 +71,66 @@
 }
 .phone{
   margin-right: 8px;
+}
+.dropdown-nav{
+  position: absolute;
+  display: block;
+  margin-top: 5px;
+  margin-left: 10px;
+  height: 200px;
+  width: 280px;
+  background-color: #fff;
+  transition: all ease-in-out 0.3s;
+  overflow-y: auto;
+  border-left: 0 !important;
+  padding: 0 !important;
+  border-right: 10px solid #fff;
+  border-top: 10px solid #fff;
+  &::-webkit-scrollbar-thumb{
+    background-color: #000;
+    border-radius: 10px;
+  }
+  &::-webkit-scrollbar{
+    background-color: #fff;
+    width: 4px;
+  }
+  &::-webkit-scrollbar-track{
+    background-color: #ccc;
+    border-radius: 10px;
+  }
+  p{
+    cursor: pointer;
+    padding: 20px;
+    text-transform: uppercase;
+    margin: 0;
+    font-family: $font-family-base;
+    font-size: $font-size-small;
+    font-weight: $font-weight-semi-bold;
+    transition: all ease-in-out 0.2s;
+    color: black;
+    img{
+      position: relative;
+      top: -5px;
+      left: -20px;
+      float: right;
+      width: 60px;
+      height: 100%;
+      transition: all ease-in-out 0.2s;
+    }
+    &:hover{
+      background-color: #ccc;
+      img{
+        left: -30px;
+      }
+    }
+  }
+}
+.dropdown-nav-hide{
+  position: absolute;
+  overflow: hidden;
+  height: 0px;
+  opacity: 0;
+}
+.dropdown-container{
+  display: inline-block;
 }
