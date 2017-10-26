@@ -4,11 +4,12 @@
   width: 100%;
   z-index: 99;
   height: 70px;
-  padding-top: 20px;
+  padding-top: 30px;
+  transition: all ease-in-out 0.3s;
 }
 .container-nav{
   align-items: flex-end;
-  width: 955px;
+  width: 990px;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
@@ -17,8 +18,15 @@
     padding: 5px 15px 5px 15px;
     margin-left: 65px;
     font-size: $font-size-base;
+    transition: all ease-in-out 0.25s;
+    cursor: pointer;
     .chev{
       margin-left: 20px;
+      top: -3px;
+    }
+    &:hover{
+      background-color: $color-font;
+      color: black;
     }
   }
   a{
@@ -28,12 +36,13 @@
     color: $color-font;
     font-family: $font-family-base;
     font-size: $font-size-small;
-    font-weight: $font-weight-thin;
+    font-weight: $font-weight-semi-bold;
 
   }
   .brand{
     img{
-      margin-left: -15%;
+      position: relative;
+      top: -3px;
       margin-bottom: -15px;
   }
   }
@@ -55,7 +64,7 @@
   align-items: center;
   vertical-align: middle;
   position: relative;
-  top: -3px;
+  top: -2px;
   margin-left: 10px;
   font-size: 9px;
 }

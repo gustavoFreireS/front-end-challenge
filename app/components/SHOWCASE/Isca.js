@@ -3,8 +3,7 @@ import Seta from '../../assets/images/seta.png';
 require('../../assets/stylesheets/isca.scss');
 
 /**
- * Componente usado para mostrar um vídeo do vimeo em loop responsivamente em desktops
- * Recebe a url do embed video como parâmetro"
+ * Componente contendo o formulário a ser preenxido pelo usuário
  */
 class Isca extends Component {
   constructor(props) {
@@ -37,19 +36,19 @@ class Isca extends Component {
         <input className='input-text' placeholder='Telefone*' type='text'/>
         <p>Número de parcelas*</p>
         <div className='ball' onClick={() => this.handleClick(12)}>
-          <div className='ball-checked' style= { (click == 12) ? { display: 'block' } : { display: 'none' }}></div>
+          <div className='ball-checked' style= { (click == 12) ? { backgroundColor: '#fff' } : { backgroundColor: 'rgba(0,0,0,0)' }}></div>
         </div>
         <span className='parcelas'>12</span>
         <div className='ball' onClick={() => this.handleClick(24)}>
-          <div className='ball-checked' style= { (click == 24) ? { display: 'block' } : { display: 'none' }}></div>
+          <div className='ball-checked' style= { (click == 24) ? { backgroundColor: '#fff' } : { backgroundColor: 'rgba(0,0,0,0)' }}></div>
         </div>
         <span className='parcelas'>24</span>
         <div className='ball' onClick={() => this.handleClick(36)}>
-          <div className='ball-checked' style= { (click == 36) ? { display: 'block' } : { display: 'none' }}></div>
+          <div className='ball-checked' style= { (click == 36) ? { backgroundColor: '#fff' } : { backgroundColor: 'rgba(0,0,0,0)' }}></div>
         </div>
         <span className='parcelas'>36</span>
         <div className='ball' onClick={() => this.handleClick(48)}>
-          <div className='ball-checked' style= { (click == 48) ? { display: 'block' } : { display: 'none' }}></div>
+          <div className='ball-checked' style= { (click == 48) ? { backgroundColor: '#fff' } : { backgroundColor: 'rgba(0,0,0,0)' }}></div>
         </div>
         <span className='parcelas'>48</span>
         <input className='input-text' placeholder='Valor da entrada*' type='text'/>

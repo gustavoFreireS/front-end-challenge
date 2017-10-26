@@ -2,13 +2,13 @@
 
 .isca-container {
   display: inline-block;
-  width: 300px;
+  max-width: 280px !important;
   height: 570px;
-  padding: 1px 20px 1px;
+  padding: 1px 15px 1px;
   font-family: $font-family-base;
   color: $color-font;
   font-size: $font-size-small;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(35,35,35,0.85);
 
   p {
     color: $color-font;
@@ -30,7 +30,7 @@
   }
 
   .separator {
-    width: 300px;
+    width: 280px;
     height: 1px;
     margin-top: 10px;
     margin-bottom: 5px;
@@ -38,7 +38,7 @@
   }
 
   .selector {
-    width: 280px;
+    width: 260px;
     border-radius: 5px;
     background-color: transparent;
     padding: 5px 10px;
@@ -56,7 +56,7 @@
   .input-text {
     font-size: $font-size-small;
     font-weight: $font-weight-thin;
-    width: 280px;
+    width: 260px;
     margin-top: 8px;
     outline: none;
     color: $color-white;
@@ -73,21 +73,23 @@
   }
 
   .ball {
+    cursor: pointer;
     position: relative;
     top: 1px;
     display: inline-block;
-    margin-right: 10px;
-    height: 10px;
-    width: 10px;
+    margin-right: 6px;
+    height: 12px;
+    width: 12px;
     border: 2px solid $color-font;
     border-radius: 50%;
 
     .ball-checked {
-      height: 6px;
-      width: 6px;
+      height: 8px;
+      width: 8px;
       border-radius: 50%;
       background-color: white;
       margin: 2px auto 0;
+      transition: all ease-in-out 0.3s;
     }
   }
 
@@ -110,7 +112,7 @@
 
   .parcelas {
     vertical-align: top;
-    margin-right: 37px;
+    margin-right: 32px;
   }
 
   .ofertas {
@@ -122,8 +124,10 @@
   }
 
   .button-simul {
+    cursor: pointer;
     margin-top: 15px;
-    padding: 10px 59px;
+    padding: 10px 40px;
+    width: 280px;
     text-transform: uppercase;
     background-color: #b71d3e;
     border: 0;
@@ -131,9 +135,17 @@
     border-top: 2px solid lighten(#b71d3e, 10%);
     font-size: $font-size-base;
     margin-bottom: 20px;
-    -webkit-box-shadow: 2px 4px 5px 0 rgba(0,0,0,0.75);
-    -moz-box-shadow: 2px 4px 5px 0 rgba(0,0,0,0.75);
-    box-shadow: 2px 4px 5px 0 rgba(0,0,0,0.75);
+    -webkit-box-shadow: 1px 3px 4px 0 rgba(0,0,0,0.5);
+    -moz-box-shadow: 1px 3px 4px 0 rgba(0,0,0,0.5);
+    box-shadow: 1px 3px 4px 0 rgba(0,0,0,0.5);
+    transition: all ease-in-out 0.3s;
+    &:hover{
+      -webkit-box-shadow: 0px 1px 2px 0 rgba(0,0,0,0.75);
+      -moz-box-shadow: 0px 1px 2px 0 rgba(0,0,0,0.75);
+      box-shadow: 0px 1px 2px 0 rgba(0,0,0,0.75);
+      border-top: 2px solid darken(#b71d3e, 2%);
+      background-color: darken(#b71d3e, 5%);
+    }
   }
 
   .privacy {

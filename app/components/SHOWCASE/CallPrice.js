@@ -2,11 +2,6 @@ import React, {Component} from 'react';
 import Share from '../../assets/images/share.png';
 require('../../assets/stylesheets/callprice.scss');
 
-
-/**
- * Componente usado para mostrar um vídeo do vimeo em loop responsivamente em desktops
- * Recebe a url do embed video como parâmetro"
- */
 class CallPrice extends Component {
   constructor(props) {
     super(props);

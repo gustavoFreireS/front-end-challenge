@@ -1,0 +1,48 @@
+@import 'variables.scss';
+
+.root-calls{
+  font-family: $font-family-base;
+  display: inline-block;
+  background-color: #522d3a;
+  width: 100%;
+  max-height: 300px;
+  min-height: 250px;
+  padding-top: 5px;
+
+
+}
+.container-text{
+  display: inline-block;
+  text-align: center;
+  width: 250px;
+  &:nth-child(2){
+    margin: 120px;
+}
+}
+.container-calls{
+  display: flex;
+  align-items: center;
+  height: 200px;
+  width: 955px;
+  margin: 0 auto;
+  justify-content: center;
+}
+.top-text{
+  font-size: 24px;
+  color: $color-font;
+  font-weight: $font-weight-thin;
+  margin-bottom: -20px;
+
+}
+.middle-text{
+  color: #d33c5c;
+  font-size: 34px;
+  text-transform: uppercase;
+  font-weight: $font-weight-normal;
+  margin-bottom: -10px;
+}
+.bottom-text{
+  font-weight: $font-weight-thin;
+  color: $color-font;
+  font-size: $font-size-base;
+}
