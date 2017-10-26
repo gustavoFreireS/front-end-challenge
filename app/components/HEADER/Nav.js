@@ -40,16 +40,16 @@ class Nav extends Component {
             <div className='links-left'>
 
               <a>Nossos veículos
-                <FontAwesome className='chev' name='chevron-down' size='0.5x'/></a>
+                <FontAwesome className='chev' name='chevron-down'/></a>
               <a>Serviços</a>
               <a>Vendas diretas
-                <FontAwesome className='chev' name='chevron-down' size='0.5x'/></a>
+                <FontAwesome className='chev' name='chevron-down'/></a>
             </div>
             <div className='links-right'>
               <a className='telefones'>
                 <FontAwesome name='phone' className='phone'/>
                 telefones
-                <FontAwesome className='chev' name='chevron-down' size='1x'/></a>
+                <FontAwesome className='chev' name='chevron-down'/></a>
             </div>
           </div>
           <a className='logo'>
