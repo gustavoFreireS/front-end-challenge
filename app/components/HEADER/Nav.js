@@ -2,6 +2,7 @@
 import React, {Component} from 'react';
 import Logo from '../../assets/images/logo.png';
 import Toyota from '../../assets/images/toyota.png';
+import Eh2k17 from '../../assets/images/etiosh2k17.png';
 require('../../assets/stylesheets/nav.scss');
 import FontAwesome from 'react-fontawesome';
 import Dropdown from './Dropdown.js';
@@ -50,13 +51,42 @@ class Nav extends Component {
               <div className='dropdown-container'>
               <a onClick={() => this.refs.child.showDropdown('carros')}>Nossos veículos
                 <FontAwesome className='chev' name='chevron-down'/></a>
-              <Dropdown target={'carros'} ref="child"/>
+              <Dropdown target={'carros'} ref="child">
+                <p>etios hatch 2017
+                  <img src={Eh2k17}></img>
+                </p>
+                <p>etios hatch 2017
+                  <img src={Eh2k17}></img>
+                </p>
+                <p>etios hatch 2017
+                  <img src={Eh2k17}></img>
+                </p>
+                <p>etios hatch 2017
+                  <img src={Eh2k17}></img>
+                </p>
+                <p>etios hatch 2017
+                  <img src={Eh2k17}></img>
+                </p>
+              </Dropdown>
             </div>
               <a>Serviços</a>
               <div className='dropdown-container'>
               <a onClick={() => this.refs.child2.showDropdown('vendas')}>Vendas diretas
                 <FontAwesome className='chev' name='chevron-down'/></a>
-              <Dropdown target={'vendas'} ref="child2"/>
+              <Dropdown target={'vendas'} ref="child2">
+                <p>Empresas
+                </p>
+                <p>Frotistas
+                </p>
+                <p>Governo
+                </p>
+                <p>PCD
+                </p>
+                <p>Produto Rural
+                </p>
+                <p>Taxista
+                </p>
+              </Dropdown>
             </div>
             </div>
             <div className='links-right'>

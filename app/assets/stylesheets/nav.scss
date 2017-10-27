@@ -80,7 +80,7 @@
   height: 200px;
   width: 280px;
   background-color: #fff;
-  transition: all ease-in-out 0.3s;
+  transition: height ease-in-out 0.3s;
   overflow-y: auto;
   border-left: 0 !important;
   padding: 0 !important;
@@ -133,4 +133,14 @@
 }
 .dropdown-container{
   display: inline-block;
+}
+.vendas{
+  height: auto;
+  overflow: hidden;
+  border: 0;
+  border-top: 5px solid #fff;
+  p{
+    padding: 10px;
+    padding-left: 20px;
+  }
 }

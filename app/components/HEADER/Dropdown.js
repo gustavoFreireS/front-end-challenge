@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import Eh2k17 from '../../assets/images/etiosh2k17.png';
 class Dropdown extends Component {
   constructor(props) {
     super(props);
@@ -24,24 +23,10 @@ class Dropdown extends Component {
   }
   render() {
     return (
-      <div className={this.props.target  + ' dropdown-nav' + (!this.state.show
-        ? '-hide'
-        : '')}>
-        <p>etios hatch 2017
-          <img src={Eh2k17}></img>
-        </p>
-        <p>etios hatch 2017
-          <img src={Eh2k17}></img>
-        </p>
-        <p>etios hatch 2017
-          <img src={Eh2k17}></img>
-        </p>
-        <p>etios hatch 2017
-          <img src={Eh2k17}></img>
-        </p>
-        <p>etios hatch 2017
-          <img src={Eh2k17}></img>
-        </p>
+      <div className={'dropdown-nav' + (!this.state.show
+        ? '-hide '
+        : ' ') + this.props.target}>
+        {this.props.children}
       </div>
     );
   }
