@@ -16,8 +16,8 @@
   .telefones{
     border: 2px solid $color-font;
     padding: 5px 15px 5px 15px;
-    margin-left: 65px;
-    font-size: $font-size-base;
+    margin-left: 60px;
+    font-size: $font-size-base !important;
     transition: all ease-in-out 0.25s;
     cursor: pointer;
     .chev{
