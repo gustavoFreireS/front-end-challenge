@@ -24,7 +24,7 @@ class Dropdown extends Component {
   }
   render() {
     return (
-      <div className={this.props.target + ' dropdown-nav' + (!this.state.show
+      <div className={this.props.target  + ' dropdown-nav' + (!this.state.show
         ? '-hide'
         : '')}>
         <p>etios hatch 2017
