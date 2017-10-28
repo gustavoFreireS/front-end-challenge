@@ -5,6 +5,7 @@ import Showcase from './app/components/SHOWCASE/Showcase.js';
 import Chamadas from './app/components/CHAMADAS/Chamadas.js';
 import Versions from './app/components/VERSOES/Versions.js';
 import Carros from './app/components/CARROS/Carros.js';
+import Footer from './app/components/FOOTER/Footer.js';
 require('./app/assets/stylesheets/index.scss');
 
 ReactDOM.render((
@@ -14,7 +15,7 @@ ReactDOM.render((
   <Chamadas/>
   <Versions/>
   <Carros/>
-
+  <Footer/>
   </div>
   ), document.getElementById('app')
 );

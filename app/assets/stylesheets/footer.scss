@@ -1,0 +1,72 @@
+@import 'variables.scss';
+.footer {
+  background-color: #2a2a2a;
+  height: 160px;
+  width: 100%;
+  color: #797979;
+  font-family: $font-family-base;
+  font-size: $font-size-small;
+  padding-top: 40px;
+.footer-container{
+
+  width: 75%;
+  margin: 0 auto;
+}
+.icon-f{
+  position: absolute;
+  margin-left: 11px;
+  margin-top: 10px;
+  color: #2a2a2a;
+  &:hover{
+    color: #fff;
+    background-color: transparent !important;
+  }
+
+}
+  .link-info {
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    img {
+      position: static;
+      display: block;
+      width: 70px;
+      float: none;
+      display: static;
+      margin: 0 auto;
+      margin-top: 70px;
+    }
+    .f-links {
+      a {
+        text-decoration: underline;
+        margin: 10px;
+      }
+    }
+  }
+
+  img {
+    display: inline-block;
+    float: left;
+  }
+}
+
+.buttons {
+  float: right;
+}
+
+.gray-box {
+  height: 30px;
+  width: 30px;
+  margin: 2px;
+  background-color: #5a5a5a;
+  display: inline-block;
+  &:hover{
+    background-color: #245dc1;
+    &:nth-child(2){
+      background-color: #00aced;
+    }
+    .icon-f{
+      color: #fff !important;
+    }
+  }
+}

@@ -6,7 +6,7 @@
   font-weight: $font-weight-semi-bold;
   margin-bottom: 0;
   margin-top: 15px;
-  
+
 }
 .sub-call{
   text-transform: uppercase;
@@ -62,7 +62,8 @@
   text-align: center;
   width: 200px;
   margin: 0 auto;
-  margin-top: 180px;
+  margin-top: 160px;
+  font-family: $font-family-base;
   font-weight: $font-weight-thin;
   font-size: $font-size-small;
   img{
@@ -86,6 +87,7 @@
   border-top: 2px solid lighten(#b71d3e, 10%);
   font-size: $font-size-base;
   margin-bottom: 20px;
+  border-radius: 5px;
   -webkit-box-shadow: 1px 3px 4px 0 rgba(0,0,0,0.5);
   -moz-box-shadow: 1px 3px 4px 0 rgba(0,0,0,0.5);
   box-shadow: 1px 3px 4px 0 rgba(0,0,0,0.5);

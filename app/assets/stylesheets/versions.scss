@@ -7,6 +7,7 @@
   background-position: center;
   background-size: cover;
   overflow: hidden;
+  padding-bottom: 20px;
 }
 .sections{
   width: 1100px;
@@ -22,6 +23,8 @@
   margin-top: 20px;
   font-size: 22px;
   font-weight: lighter;
+  font-family: $font-family-base;
+  color: $color-font;
 }
 .v-selector {
   font-family: $font-family-base;
@@ -109,5 +112,46 @@
 
   tr:nth-child(odd) {
     background-color: transparentize(#3c3c3c, 0.5);
+  }
+}
+.opcionais{
+  width: 70%;
+  height: 130px;
+  float: right;
+  margin-top: -60px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  .title{
+    margin-top: 0px;
+  }
+  &::-webkit-scrollbar-thumb{
+    background-color: #b71d3e;
+    border-radius: 10px;
+    height: 1px;
+  }
+  &::-webkit-scrollbar{
+    background-color: #1e1e1e;
+    width: 4px;
+    border-radius: 10px;
+    height: 3px;
+  }
+  &::-webkit-scrollbar-track{
+    background-color: #1e1e1e;
+    border-radius: 10px;
+  }
+}
+.option-contaiber{
+  height: 100px;
+  width: 1000px;
+  font-family: $font-family-base;
+  color: $color-font;
+
+  p{
+    display: inline-block;
+    background-color: #b71d3e;
+    margin: 3px;
+    font-size: 12px;
+    border-radius: 20px;
+    padding: 2px 15px 2px 15px;
   }
 }

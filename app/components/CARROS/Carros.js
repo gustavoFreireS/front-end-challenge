@@ -20,13 +20,14 @@ class Carros extends Component {
    };
     return (
     <div className='sliderX'>
+      <h3> Conheça nossos Carros </h3>
+      <div className='separator'></div>
       <Slider {...settings}>
-      <div><img src={Cla}></img></div>
-      <div><img src={Cla}></img></div>
-      <div><img src={Cla}></img></div>
-      <div><img src={Cla}></img></div>
-      <div><img src={Cla}></img></div>
-      <div><img src={Cla}></img></div>
+      <div><img className='car-imageS' src={Cla}></img> <p className='description'>Classe CLA</p></div>
+      <div><img className='car-imageS' src={Cla}></img> <p className='description'>Classe CLA</p></div>
+      <div><img className='car-imageS' src={Cla}></img> <p className='description'>Classe CLA</p></div>
+      <div><img className='car-imageS' src={Cla}></img> <p className='description'>Classe CLA</p></div>
+      <div><img className='car-imageS' src={Cla}></img> <p className='description'>Classe CLA</p></div>
     </Slider>
     </div>
     );

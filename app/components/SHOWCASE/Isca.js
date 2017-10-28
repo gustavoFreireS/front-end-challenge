@@ -53,7 +53,7 @@ class Isca extends Component {
           : {}}>
           {this.state.version}
           <span className='seta'>
-            <img src={Seta}></img>
+            <FontAwesome name='carret-down'/>
           </span>
         </div>
         <div className='dropdown-select' style={{
