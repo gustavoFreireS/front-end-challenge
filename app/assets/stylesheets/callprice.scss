@@ -6,6 +6,7 @@
   font-weight: $font-weight-semi-bold;
   margin-bottom: 0;
   margin-top: 15px;
+  
 }
 .sub-call{
   text-transform: uppercase;
@@ -42,12 +43,20 @@
   color: $color-font;
   font-family: $font-family-base;
   font-size: $font-size-wee;
+  p{
+    @media only screen and (max-width: 980px) {
+      display: none;
+    }
+  }
 }
 .consulta{
   font-weight: $font-weight-thin;
   font-size: 10px;
   position: relative;
   top: -40px;
+  @media only screen and (max-width: 980px) {
+    display: none;
+  }
 }
 .share-info{
   text-align: center;
@@ -61,4 +70,38 @@
     display: block;
     margin-bottom: 10px;
   }
+  @media only screen and (max-width: 980px) {
+    display: none;
+  }
+}
+.button-simul {
+  cursor: pointer;
+  margin-top: 15px;
+  padding: 10px 40px;
+  width: 280px;
+  text-transform: uppercase;
+  background-color: #b71d3e;
+  border: 0;
+  color: $color-font;
+  border-top: 2px solid lighten(#b71d3e, 10%);
+  font-size: $font-size-base;
+  margin-bottom: 20px;
+  -webkit-box-shadow: 1px 3px 4px 0 rgba(0,0,0,0.5);
+  -moz-box-shadow: 1px 3px 4px 0 rgba(0,0,0,0.5);
+  box-shadow: 1px 3px 4px 0 rgba(0,0,0,0.5);
+  transition: all ease-in-out 0.3s;
+  &:hover{
+    -webkit-box-shadow: 0px 1px 2px 0 rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 1px 2px 0 rgba(0,0,0,0.75);
+    box-shadow: 0px 1px 2px 0 rgba(0,0,0,0.75);
+    border-top: 2px solid darken(#b71d3e, 2%);
+    background-color: darken(#b71d3e, 5%);
+  }
+}
+.mobile-btn{
+
+  @media only screen and (min-width: 981px) {
+    display: none;
+  }
+  display: block;
 }

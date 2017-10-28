@@ -42,12 +42,12 @@ class Nav extends Component {
         backgroundColor: this.state.navColor
       }}>
         <div className='container-nav'>
-          <a className='brand'>
-            <img src={Logo}></img>
-          </a>
-          <div className='center-nav'>
 
-            <div className='links-left'>
+          <div className='center-nav'>
+            <a className='brand'>
+              <img src={Logo}></img>
+            </a>
+            <div className='links'>
               <div className='dropdown-container'>
               <a onClick={() => this.refs.child.showDropdown('carros')}>Nossos veículos
                 <FontAwesome className='chev' name='chevron-down'/></a>
@@ -88,8 +88,6 @@ class Nav extends Component {
                 </p>
               </Dropdown>
             </div>
-            </div>
-            <div className='links-right'>
               <div className='dropdown-container'>
               <a className='telefones' onClick={() => this.refs.child3.showDropdown('telefones')}>
                 <FontAwesome name='phone' className='phone'/>
@@ -97,11 +95,12 @@ class Nav extends Component {
                 <FontAwesome className='chev' name='chevron-down'/></a>
                 <Dropdown target={'telefones'} ref="child3"/>
               </div>
-            </div>
+            <a className='logo'>
+              <img src={Toyota} height='20px'></img>
+            </a>
           </div>
-          <a className='logo'>
-            <img src={Toyota} height='20px'></img>
-          </a>
+          </div>
+
         </div>
       </nav>
     );

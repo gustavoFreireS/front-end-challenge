@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import Isca from './Isca.js';
 import CallPrice from './CallPrice.js';
 require('../../assets/stylesheets/showcaseContainer.scss');
 
@@ -16,7 +15,6 @@ class ShowcaseContainer extends Component {
     console.log(window.innerHeight);
     return (
       <div className='root-container'>
-        <Isca/>
         <CallPrice />
     </div>
     );

@@ -1,6 +1,10 @@
 .root-container{
   padding-top: 120px;
-  width: 990px;
+  width: 980px;
   margin: 0 auto;
   height: 80vh;
+  overflow: hidden;
+  @media only screen and (max-width: 1200px) {
+    width: 95%;
+  }
 }

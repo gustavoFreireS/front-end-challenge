@@ -1,6 +1,7 @@
 @import 'variables.scss';
 
 .isca-container {
+  transition: all ease-in-out 0.3s;
   display: inline-block;
   max-width: 280px !important;
   height: 570px;
@@ -9,6 +10,13 @@
   color: $color-font;
   font-size: $font-size-small;
   background-color: rgba(35,35,35,0.85);
+  @media only screen and (max-width: 980px) {
+    position: absolute;
+    background-color: rgba(35,35,35,1);
+    z-index: 9999;
+    margin-left: -350px;
+  }
+
 
   p {
     color: $color-font;
@@ -21,6 +29,9 @@
     font-weight: $font-weight-thin;
     text-transform: uppercase;
     margin-bottom: -5px;
+    @media only screen and (max-width: 900px) {
+      display: none;
+    }
   }
 
   .secondary-call {

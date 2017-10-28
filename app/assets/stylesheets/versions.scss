@@ -1,7 +1,113 @@
-.versions-container{
+@import 'variables.scss';
+
+.versions-container {
   background-image: url('../images/highway.png');
-  height: 466px;
+  margin: 0 auto;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  overflow: hidden;
+}
+.sections{
+  width: 1100px;
+  margin: 0 auto;
+  margin-top: 0px;
+  @media only screen and (max-width: 980px) {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+.title {
+  margin-top: 20px;
+  font-size: 22px;
+  font-weight: lighter;
+}
+.v-selector {
+  font-family: $font-family-base;
+  color: $color-font;
+  vertical-align: top;
+  display: inline-block;
+  width: 250px;
+  height: auto;
+  margin-left: 30px;
+  overflow: hidden;
+  margin-bottom: 0;
+  padding-top: 10px;
+
+  p {
+    display: block;
+    text-align: right;
+  }
+
+
+  .versionCar {
+    font-size: 16px;
+    font-weight: lighter;
+    border-bottom: 1px solid gray;
+    padding-bottom: 10px;
+  }
+}
+
+.car-image {
+  vertical-align: top;
+  margin-top: 120px;
+  display: inline-block;
+  width: 350px;
+  height: 400px;
+  margin-left: 10px;
+
+  img {
+    margin-left: -40px;
+  }
+}
+
+.car-info {
+  font-family: $font-family-base;
+  color: #fff;
+  display: inline-block;
+  width: 400px;
+  height: 400px;
+  background-color: transparent;
+  margin-left: 30px;
+  padding-left: 30px;
+  padding-right: 0px;
+  vertical-align: top;
+  background-color: transparentize(#292929, 0.2);
+
+  table {
+    color: #7c7c7c;
+    font-size: 14px;
+    font-weight: $font-weight-light;
+    border-collapse: collapse;
+    width: 100%;
+    display:block;
+  }
+
+  tbody {
+    height: 300px;
+    display: inline-block;
+    width: 400px;
+    overflow: auto;
+  }
+
+  td,
+  th {
+    border: 1px solid #3c3c3c;
+    text-align: left;
+    padding: 8px;
+    width: 170px;
+    border: 0;
+  }
+  td:nth-child(2){
+    color: #d33c5c;
+  }
+
+  tr:nth-child(even) {
+    background-color: transparentize(#292929, 0.5);
+  }
+
+  tr:nth-child(odd) {
+    background-color: transparentize(#3c3c3c, 0.5);
+  }
 }

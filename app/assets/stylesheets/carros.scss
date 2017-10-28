@@ -1,0 +1,30 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+.sliderX{
+  width: 980px;
+  margin: 0 auto;
+  height: 560px;
+}
+
+.slick-prev::before {
+    font-family: FontAwesome !important;
+    content: "\f053" !important;
+    font-size: 10px !important;
+    color: white !important;
+    padding-bottom: 15px;
+}
+.slick-next::before {
+    font-family: FontAwesome !important;
+    content: "\f054" !important;
+    font-size: 10px !important;
+    color: white !important;
+    padding-bottom: 15px;
+}
+.slick-arrow{
+  height: 25px !important;
+  width: 25px !important;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  border-radius: 0 !important;
+  background-color: black !important;
+}
