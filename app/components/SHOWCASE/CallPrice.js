@@ -20,7 +20,6 @@ class CallPrice extends Component {
     this.handleClickShow = this.handleClickShow.bind(this);
     this.handleHide = this.handleHide.bind(this);
   }
-  componentDidMount() {}
   handleClick(parcela) {
     this.setState({clicked: parcela});
 
@@ -51,8 +50,8 @@ class CallPrice extends Component {
   render() {
     var click = this.state.clicked;
     return (
-      <div>
-          <div className='isca-container' style={this.state.show ? {marginLeft: '-10px', marginTop: '-40px'}: {}}>
+      <div className='root-no'>
+          <div className='isca-container' style={this.state.show ? {marginLeft: '-10px', marginTop: '-35px'}: {}}>
             <p className='call'>Simular Financiamento</p>
             <p className='secondary-call'>Escolha a parcela que cabe no seu bolso</p>
             <div className='separator'></div>

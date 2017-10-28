@@ -9,7 +9,7 @@ import Footer from './app/components/FOOTER/Footer.js';
 require('./app/assets/stylesheets/index.scss');
 
 ReactDOM.render((
-  <div>
+  <div className='root'>
   <Header/>
   <Showcase/>
   <Chamadas/>

@@ -10,6 +10,7 @@
   color: $color-font;
   font-size: $font-size-small;
   background-color: rgba(35,35,35,0.85);
+  overflow-y: hidden !important;
   @media only screen and (max-width: 980px) {
     position: absolute;
     background-color: rgba(35,35,35,1);
@@ -38,6 +39,9 @@
     font-weight: lighter;
     text-align: center;
     font-size: $font-size-small;
+    @media only screen and (max-width: 900px) {
+      display: none;
+    }
   }
 
   .separator {
@@ -46,6 +50,9 @@
     margin-top: 10px;
     margin-bottom: 5px;
     background-color: $color-gray-dark;
+    @media only screen and (max-width: 900px) {
+      display: none;
+    }
   }
 
   .selector {
