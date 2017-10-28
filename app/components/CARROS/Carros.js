@@ -16,7 +16,19 @@ class Carros extends Component {
      arrows: true,
      infinite: true,
      slidesToShow: 5,
-     slidesToScroll: 2
+     slidesToScroll: 2,
+     responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true,
+        arrows: false,
+      }
+    }
+  ]
    };
     return (
     <div className='sliderX'>

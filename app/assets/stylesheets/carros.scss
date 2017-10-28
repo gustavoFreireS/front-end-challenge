@@ -2,7 +2,7 @@
 @import "~slick-carousel/slick/slick-theme.css";
 @import 'variables.scss';
 .sliderX{
-  width: 980px;
+  width: 100%;
   margin: 0 auto;
   height: 400px;
   padding-top: 20px;
@@ -58,7 +58,7 @@
 }
 .car-imageS{
   position: relative;
-  left: 30px;
+  left: 60px;
   transition: all ease-in 0.2s;
   &:hover{
     opacity: 0.5;

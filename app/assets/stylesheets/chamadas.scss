@@ -19,11 +19,13 @@
   display:block;
   background-color: #522d3a;
   width: 100%;
-  overflow: hidden;
+  overflow: hidden !important;
   height: auto;
   @media only screen and (max-width: 980px) {
+    overflow: hidden !important;
     padding-top: 200px;
     height: 400px;
+    width: 100%;
     .container-text{
       &:nth-child(2){
         margin: 0px;
