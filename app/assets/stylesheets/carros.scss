@@ -2,10 +2,13 @@
 @import "~slick-carousel/slick/slick-theme.css";
 @import 'variables.scss';
 .sliderX{
-  width: 100%;
+  width: 998px;
   margin: 0 auto;
   height: 400px;
   padding-top: 20px;
+  @media only screen and (max-width: 980px) {
+    width: 100%;
+  }
   h3{
     font-family: $font-family-base;
     text-align: center;
@@ -58,7 +61,7 @@
 }
 .car-imageS{
   position: relative;
-  left: 60px;
+  left: 40px;
   transition: all ease-in 0.2s;
   &:hover{
     opacity: 0.5;

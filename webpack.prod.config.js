@@ -11,14 +11,12 @@ var UglifyPlugin = new Webpack.optimize.UglifyJsPlugin({
     warnings: false
   }
 });
-var CommonChunksPlugin = new Webpack.optimize.CommonsChunkPlugin({name: 'vendor'});
 
 module.exports = {
   entry: {
-    vendor: [
-      'react', 'react-dom'
-    ],
-    app: './App.js'
+    bundle: [
+      'react', 'react-dom', './App.js'
+    ]
   },
   output: {
     filename: '[name].js',
@@ -45,5 +43,5 @@ module.exports = {
       }
     ]
   },
-  plugins: [DefinePlugin, HTMLWebpackPluginConfig, UglifyPlugin, CommonChunksPlugin]
+  plugins: [DefinePlugin, HTMLWebpackPluginConfig, UglifyPlugin]
 }

@@ -13,8 +13,9 @@ class Footer extends Component {
     return (
     <div className='footer'>
       <div className='footer-container'>
-      <img src={Logo}></img>
-
+        <div className='logoi'>
+          <img src={Logo}></img>
+      </div>
     <div className='buttons'>
       <div className='gray-box'><FontAwesome className='icon-f' name='facebook'/></div>
       <div className='gray-box'><FontAwesome className='icon-f' name='twitter'/></div>
@@ -23,7 +24,7 @@ class Footer extends Component {
     <div className='link-info'>
       © Copyright 2015 - Cliente - Todos os direitos reservados.
       <div className='f-links'>
-        <a>Visitar site</a> <a>Visitar site</a> <a>Visitar site</a>
+        <a>Visitar site</a> <a>Contato</a> <a>Política de privacidade</a>
       </div>
       <img src={Auto} />
     </div>

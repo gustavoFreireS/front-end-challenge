@@ -5,7 +5,9 @@ require('../../assets/stylesheets/versions.scss');
 class Versions extends Component {
   constructor(props) {
     super(props);
-    this.state = {}
+    this.state = {
+      active: 1
+    }
   }
   render() {
     return (
@@ -13,9 +15,22 @@ class Versions extends Component {
         <div className='sections'>
           <div className='v-selector'>
             <p className='title'>Versões</p>
-            <p className='versionCar'>A200</p>
-            <p className='versionCar'>A250 Turbo Sport</p>
-            <p className='versionCar'>A 45 AMG 4MATIC</p>
+            <p className='versionCar' onClick={() => this.setState({active: 1})} style={this.state.active === 1
+              ? {
+                color: '#fff'
+              }
+              : {}}>A200</p>
+              <p className='versionCar' onClick={() => this.setState({active: 2})} style={this.state.active === 2
+                ? {
+                  color: '#fff'
+                }
+                : {}}>A250 Turbo Sport</p>
+
+                <p className='versionCar' onClick={() => this.setState({active: 3})} style={this.state.active === 3
+                  ? {
+                    color: '#fff'
+                  }
+                  : {}}>A 45 AMG 4MATIC</p>
           </div>
           <div className='car-image'><img src={Mercedes} height='200px'/></div>
           <div className='car-info'>

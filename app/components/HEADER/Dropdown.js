@@ -9,16 +9,23 @@ class Dropdown extends Component {
     this.showDropdown = this.showDropdown.bind(this);
   }
   hideDropdown() {
-    document.removeEventListener("click", this.hideDropdown);
-    document.body.style.position = 'static';
+    var root =document.getElementById("root");
+    root.removeEventListener("click", this.hideDropdown);
+    root.style.position = 'static';
     this.setState({show: false});
   }
   showDropdown(target) {
     if (target == this.props.target) {
       this.setState({show: true});
-      document.addEventListener("click", this.hideDropdown);
-      document.body.style.position = 'fixed';
-      document.body.style.width = '100%';
+      var root = document.getElementById("root");
+      var navbar = document.getElementById("root");
+      root.addEventListener("click", this.hideDropdown);
+      root.style.position = 'fixed';
+      root.style.width = '100%';
+    }
+    if (this.state.show == true){
+      this.setState({show: false});
+      root.style.position = 'static';
     }
   }
   render() {

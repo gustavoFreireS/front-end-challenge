@@ -11,7 +11,8 @@ class CallPrice extends Component {
       clicked: 12,
       opacityDropDown: 0,
       version: '1.8',
-      show: false
+      show: false,
+      checked: true
     }
     this.handleClick = this.handleClick.bind(this);
     this.handleClickSelect = this.handleClickSelect.bind(this);
@@ -50,7 +51,7 @@ class CallPrice extends Component {
   render() {
     var click = this.state.clicked;
     return (
-      <div className='root-no'>
+      <div className='root-no' id='call'>
           <div className='isca-container' style={this.state.show ? {marginLeft: '-10px', marginTop: '-35px'}: {}}>
             <p className='call'>Simular Financiamento</p>
             <p className='secondary-call'>Escolha a parcela que cabe no seu bolso</p>
@@ -101,8 +102,8 @@ class CallPrice extends Component {
             </div>
             <span className='parcelas'>48</span>
             <input className='input-text' placeholder='Valor da entrada*' type='text'/>
-            <div className='square'>
-              <div className='square-checked'></div>
+            <div className='square' onClick={() => this.setState({checked: !this.state.checked})} >
+              <div className='square-checked' style={!this.state.checked ? {display: 'none'} : {}}></div>
             </div>
             <span className='ofertas'>Desejo receber ofertas exclusivas da PG prime</span>
             <button className='button-simul'>Simular financiamento</button>
